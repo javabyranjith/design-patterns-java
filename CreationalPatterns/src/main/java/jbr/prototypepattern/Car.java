@@ -2,8 +2,7 @@ package jbr.prototypepattern;
 
 public abstract class Car implements Cloneable {
 
-  public abstract Car assembleCar();
-
+  private String manufacturer;
   private String color;
 
   public String getColor() {
@@ -14,4 +13,13 @@ public abstract class Car implements Cloneable {
     this.color = color;
   }
 
+  public String getManufacturer() {
+    return manufacturer;
+  }
+
+  public void setManufacturer(String manufacturer) {
+    this.manufacturer = manufacturer;
+  }
+
+  public abstract Car assembleCar();
 }

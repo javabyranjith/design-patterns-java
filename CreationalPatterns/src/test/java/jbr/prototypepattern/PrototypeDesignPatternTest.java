@@ -14,21 +14,41 @@ public class PrototypeDesignPatternTest {
   @Test
   public void test() {
 
-    Car maruti = new CarAssembler();
-    maruti.setColor("White");
-    Car marutiAssembled = carFactory.getCar(maruti);
-    System.out.println(marutiAssembled);
+    Car zen = new MarutiCarAssembler();
+    zen.setColor("White");
+    zen.setManufacturer("Maruti");
+    Car zenCarAssembled = carFactory.getCar(zen);
+    System.out.println(zenCarAssembled);
+    System.out.println("Maruti ZEN Car Color: " + zenCarAssembled.getColor());
+    System.out.println("Maruti ZEN Car Manufacturer: " + zenCarAssembled.getManufacturer());
+    System.out.println("Maruti ZEN Car Engine No: " + zenCarAssembled.hashCode() + "\n");
 
-    Car honda = new CarAssembler();
-    honda.setColor("Blue");
-    Car hondaAssembled = carFactory.getCar(honda);
-    System.out.println(hondaAssembled);
+    Car alto = new MarutiCarAssembler();
+    alto.setColor("Black");
+    alto.setManufacturer("Maruti");
+    Car altoCarAssembled = carFactory.getCar(alto);
+    System.out.println(altoCarAssembled);
+    System.out.println("Maruti ALTO Car Color: " + altoCarAssembled.getColor());
+    System.out.println("Maruti ALTO Car Manufacturer: " + altoCarAssembled.getManufacturer());
+    System.out.println("Maruti ALTO Car Engine No: " + altoCarAssembled.hashCode() + "\n");
 
-    System.out.println("Maruti Car Color: " + marutiAssembled.getColor());
-    System.out.println("Maruti Car Engine No: " + marutiAssembled.hashCode());
+    Car amaze = new HondaCarAssembler();
+    amaze.setColor("Blue");
+    amaze.setManufacturer("Honda");
+    Car amazeCarAssembled = carFactory.getCar(amaze);
+    System.out.println(amazeCarAssembled);
+    System.out.println("Honda AMAZE Car Color: " + amazeCarAssembled.getColor());
+    System.out.println("Honda AMAZE Car Manufacturer: " + amazeCarAssembled.getManufacturer());
+    System.out.println("Honda AMAZE Car Engine No: " + amazeCarAssembled.hashCode() + "\n");
 
-    System.out.println("Honda Car Color: " + hondaAssembled.getColor());
-    System.out.println("Honda Car Engine No: " + hondaAssembled.hashCode());
+    Car civic = new HondaCarAssembler();
+    civic.setColor("Red");
+    civic.setManufacturer("Honda");
+    Car civicCarAssembled = carFactory.getCar(civic);
+    System.out.println(civicCarAssembled);
+    System.out.println("Honda CIVIC Car Color: " + civicCarAssembled.getColor());
+    System.out.println("Honda CIVIC Car Manufacturer: " + civicCarAssembled.getManufacturer());
+    System.out.println("Honda CIVIC Car Engine No: " + civicCarAssembled.hashCode());
   }
 
 }
