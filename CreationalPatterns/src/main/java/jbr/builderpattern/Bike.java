@@ -2,12 +2,21 @@ package jbr.builderpattern;
 
 public class Bike {
 
+  private String name;
   private String wheelType;
   private String engineType;
   private int cost;
 
   public int getCost() {
     return cost;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 
   public void setCost(int cost) {
@@ -28,6 +37,12 @@ public class Bike {
 
   public void setEngineType(String engineType) {
     this.engineType = engineType;
+  }
+
+  @Override
+  public String toString() {
+    return "Bike Name: " + this.name + "\nWheel Type: " + this.wheelType + "\nEngine Type: " + this.engineType
+        + "\nCost: " + this.cost;
   }
 
 }

@@ -4,7 +4,7 @@ public class HeroBike implements BikeBuilder {
 
   private Bike bike;
 
-  HeroBike() {
+  public HeroBike() {
     bike = new Bike();
   }
 
@@ -24,6 +24,10 @@ public class HeroBike implements BikeBuilder {
 
   public Bike getBike() {
     return bike;
+  }
+
+  public void setName() {
+    bike.setName("Hero");
   }
 
 }

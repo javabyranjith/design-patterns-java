@@ -23,4 +23,8 @@ public class RoyalEnfield implements BikeBuilder {
     return bike;
   }
 
+  public void setName() {
+    bike.setName("RoyalEnfield");
+  }
+
 }
