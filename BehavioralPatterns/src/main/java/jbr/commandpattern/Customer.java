@@ -1,5 +1,7 @@
 package jbr.commandpattern;
 
+import jbr.common.model.Food;
+
 public class Customer {
 
   public static void main(String[] args) {

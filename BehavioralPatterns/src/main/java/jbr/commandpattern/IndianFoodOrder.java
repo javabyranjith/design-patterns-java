@@ -1,5 +1,7 @@
 package jbr.commandpattern;
 
+import jbr.common.model.Food;
+
 public class IndianFoodOrder implements FoodOrder {
 
   private Chef chef;

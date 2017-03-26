@@ -3,6 +3,8 @@ package jbr.commandpattern;
 import java.util.ArrayList;
 import java.util.List;
 
+import jbr.common.model.Food;
+
 public class Waiter {
 
   private List<FoodOrder> foodOrders = new ArrayList<>();

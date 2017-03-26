@@ -1,5 +1,7 @@
 package jbr.commandpattern;
 
+import jbr.common.model.Food;
+
 public class Chef {
   public Food preparChineseFood(String food) {
     return new Food().setName(food.toUpperCase())
