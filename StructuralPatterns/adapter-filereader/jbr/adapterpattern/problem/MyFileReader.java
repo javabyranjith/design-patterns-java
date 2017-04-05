@@ -1,6 +1,6 @@
 package jbr.adapterpattern.problem;
 
-public class FileReaderImpl implements FileReader {
+public class MyFileReader implements FileReader {
 
   public void readFile(String fileType) {
     System.out.println("File Type is: " + fileType);
