@@ -1,7 +1,5 @@
 package jbr.adapterpattern.filereader.problem;
 
-import jbr.adapterpattern.problem.FileReader;
-
 public class FileReaderImpl implements FileReader {
 
   public void readFile(String fileType) {

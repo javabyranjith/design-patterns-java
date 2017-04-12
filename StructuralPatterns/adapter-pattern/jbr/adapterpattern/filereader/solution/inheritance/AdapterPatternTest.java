@@ -1,8 +1,5 @@
 package jbr.adapterpattern.filereader.solution.inheritance;
 
-import jbr.adapterpattern.solution.inheritance.FileReader;
-import jbr.adapterpattern.solution.inheritance.MyFileReader;
-
 public class AdapterPatternTest {
   public static void main(String[] args) {
 

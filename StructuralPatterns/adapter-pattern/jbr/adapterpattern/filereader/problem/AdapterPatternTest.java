@@ -1,7 +1,5 @@
 package jbr.adapterpattern.filereader.problem;
 
-import jbr.adapterpattern.problem.FileReader;
-
 public class AdapterPatternTest {
   public static void main(String[] args) {
 
