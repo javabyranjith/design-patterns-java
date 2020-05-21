@@ -7,4 +7,5 @@
 
 ### HOW TO RUN?
   1. BuilderPatternMain -> Run As -> Java Application
-  2. BuilderPatternTest -> Run As -> Junit Test
+  2. BuilderPatternMainJava8 -> Run As -> Java Application
+  3. BuilderPatternTest -> Run As -> Junit Test
